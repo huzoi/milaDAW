@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdbool.h>
+#include <stdlib.h> // per la funció abort();
+
+int retorn;
+
+void main(){
+
+    menu();
+
+    return;
+    }
+
+void menu(){
+
+    int op1;
+
+    system("cls");
+    printf("==========MENU==========\n1.- Suma dos nombres\n2.- Suma de 0 a N\n3.- SORTIR\n========================");
+    scanf("%d", &op1);
+
+    switch(op1){
+        case 1:
+            system("cls");
+            sumaDosNombres();
+        case 2:
+            system("cls");
+            uFinsANum();
+        case 3:
+            sortir();
+    }
+
+}
+
+void sumaDosNombres(){
+
+    int num1, num2;
+    int suma = 0;
+
+    printf("Insereix el primer operand: ");
+    scanf("%d", &num1);
+    printf("\nInsereix el segon operand: ");
+    scanf("%d", &num2);
+
+    suma = num1 + num2;
+
+    printf("\nResposta: %d + %d = %d. ", num1, num2, suma);
+    printf("\nPresiona una tecla per tornar al menu principal.");
+    scanf("%c", &retorn);
+    getch();
+    if (retorn){
+        system("cls");
+        menu();
+    }
+}
+
+void uFinsANum(){
+
+    int num, i, suma = 0;
+
+    printf("Introdueix un nombre (1 / 99): ");
+    scanf("%d", &num);
+
+    for (i = 1; i <= num; i++){
+        suma += i;
+    }
+        printf("La suma de la serie 1, 2, 3,..., %d es: %d\n", num, suma);
+        printf("\nPresiona una tecla per tornar al menu principal.");
+    scanf("%c", &retorn);
+    getch();
+    if (retorn){
+        system("cls");
+        menu();
+        }
+    }
+
+void sortir(){
+
+    abort();
+    /*int opcio;
+
+    printf("Estas segur que vols tancar el programa? (Y/N): ");
+    scanf("%d", &opcio);
+
+    if (!(opcio == 'y' || opcio == 'Y')){
+        menu();
+    } else if (opcio == 'y' || opcio == 'Y'){
+         abort();
+    } No he aconseguit fer-ho funcionar per qualsevol cosa */
+}

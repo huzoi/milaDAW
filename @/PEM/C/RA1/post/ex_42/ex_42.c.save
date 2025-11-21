@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+
+int main(){
+
+    float distancia, descompte, preu;
+    char trajecte;
+
+    printf("Introdueix la distancia en quilometres: ");
+
+    /* Amb aquest programa m'hi vaig enrollar durant una estona i vaig informar-me sobre cóm evitar
+       que l'usuari entri caracters invalids. */
+    if (scanf("%f", &distancia) != 1){
+        printf("Valor Invalid\n");
+        return 1;
+    }
+
+    printf("Introdueix el tipus de viatge (A = Anada / T= AiT): ");
+    scanf(" %c", &trajecte);
+
+    preu = distancia * 0.06; // Calcula el preu del trajecte
+
+    if (trajecte == 'T' || trajecte == 't') {
+        preu = preu * 2; // Si el bitllet es d'anada i tornada, logicament costa el doble.
+        descompte = preu * 0.20;  // 20%.
+        preu -= descompte;  // Aplica 20%..
+        printf("El preu del bitllet es: %.2f$\n", preu);
+    }
+    else if (trajecte == 'A' || trajecte == 'a'){
+        printf("El preu del bitllet es: %.2f$\n", preu); // Preu sense descompte.
+    }else {
+        printf("%c no es un valor valid\n", trajecte);
+        return 2;
+    }
+
+    getch();
+}
+
+

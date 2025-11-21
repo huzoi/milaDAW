@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define N_CARES 6
+#define MIDA_CARA 2
+
+void inicialitzarDau(int dau[N_CARES][MIDA_CARA][MIDA_CARA])
+{
+    int i, j, k;
+
+    srand(time(NULL));
+
+    for (i = 0; i < N_CARES; i++)
+    {
+        for (j = 0; j < MIDA_CARA; j++)
+        {
+            for (k = 0; k < MIDA_CARA; k++)
+            {
+                dau[i][j][k] = rand() % 6 + 1;
+            }
+        }
+    }
+}
+
+void mostrarDau(int dau[N_CARES][MIDA_CARA][MIDA_CARA])
+{
+    int i, j, k;
+
+    printf("Cares del dau:\n");
+
+    for (i = 0; i < N_CARES; i++)
+    {
+        printf("Cara %d:\n", i + 1);
+        for (j = 0; j < MIDA_CARA; j++)
+        {
+            for (k = 0; k < MIDA_CARA; k++)
+            {
+                printf("%d ", dau[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+}
+
+int comprobarDau(int dau[N_CARES][MIDA_CARA][MIDA_CARA])
+{
+    int i, j, k;
+    int sisCount = 0;
+
+    for (i = 0; i < N_CARES; i++)
+    {
+        for (j = 0; j < MIDA_CARA; j++)
+        {
+            for (k = 0; k < MIDA_CARA; k++)
+            {
+                if (dau[i][j][k] == 6) {
+                    sisCount++;
+                }
+            }
+        }
+    }
+    return sisCount == 3;
+}
+
+int main()
+{
+    int dau[N_CARES][MIDA_CARA][MIDA_CARA];
+
+    inicialitzarDau(dau);
+    mostrarDau(dau);
+
+    if (comprobarDau(dau))
+    {
+        printf("El dau ES diabolic! Conte tres 6.\n");
+    }   else
+        {
+            printf("El dau NO es diabolic. No conte tres 6.\n");
+        }
+    getch();
+}

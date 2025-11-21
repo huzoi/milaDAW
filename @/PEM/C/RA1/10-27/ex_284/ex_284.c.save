@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+struct t_fitxa
+{
+    int id;
+    char title[50];
+    char auth[50];
+    char edit[50];
+    int ed;
+    int any;
+    char dataPub[10];
+    char dataImp[10];
+    int pagNum;
+};
+
+void main()
+{
+    struct t_fitxa s1;
+    
+    printf("Introdueix l'ID del llibre: ");
+    scanf("%d", &id);
+    
+    printf("Introdueix el titol del llibre: ");
+    scanf("%c", title);
+    
+    printf("Introdueix l'autor/s del llibre: ");
+    scanf("%c %c", auth);
+    
+    printf("Introdueix l'editorial del llibre: ");
+    scanf("%c", edit);
+    
+    printf("Introdueix l'edicio del llibre: ");
+    scanf("%d", &ed);
+    
+    printf("Introdueix l'any d'edicio del llibre: ");
+    scanf("%d", &any);
+    
+    printf("Introdueix la data de publicacio del llibre: ");
+    scanf("%c", dataPub);
+    
+    printf("Introdueix")
+}

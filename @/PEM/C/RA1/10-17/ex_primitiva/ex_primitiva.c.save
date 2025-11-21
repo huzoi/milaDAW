@@ -1,0 +1,49 @@
+/* Explicació de recorreguts i cerques utilitzant taules.
+Exercici a fer:
+1) Generar 20 números per la primitiva (de l'1 al 49)     rand()%49 + 1
+     i mirar si apareix el número 13 entre els números generats. Passes a seguir:
+     Primer: omplir 20 números a la primitiva max 30
+     Segon: Mostrar-la per pantalla (realitzarem un recorregut)
+     Tercer: Comprovar si hi apareix el número 13 (cerca, de manual!) */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+
+#define max 30
+#define numGenerats 20
+
+
+void main() {
+
+    int primitiva[max], i;
+    bool sl = false;
+    srand(time(NULL));
+
+    for (i = 0; i < numGenerats; i++) {
+        primitiva[i] = rand() % 49 + 1;
+    }
+
+    printf("\n----Els Nombres de la Primitiva son----\n\n");
+    for (int i = 0; i < numGenerats; i++) {
+        printf("%d ", primitiva[i]);
+    }
+
+    for (int i = 0; i < numGenerats; i++) {
+        if (primitiva[i] == 13) {
+            sl = true;
+            break;
+        }
+    }
+
+    if (sl) {
+        printf("\n\n----El Nombre 13 apareix a la Primitiva!----\n");
+    } else {
+        printf("\n\n----El Nombre 13 no apareix a la Primitiva.----\n");s
+      }
+
+    getch();
+
+}

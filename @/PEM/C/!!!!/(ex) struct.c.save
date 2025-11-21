@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <string.h>
+
+// short ver
+struct structure
+{
+      int num;
+      char letter;
+      char string[30];
+}; // end w/ ;
+
+int main()
+{
+    struct structure s1;
+
+      s1.myNum = 13;
+      s1.myLetter = 'B';
+
+      // assign a value to the string using the strcpy function
+      strcpy(s1.string, "Some text");
+
+      printf("My string: %s", s1.string);
+
+      return 0;
+      
+////////////////////////////////////////////////////////////////////////////////////////////
+      // values in a comma-separated list
+      struct structure s1 = {13, 'B', "tus muertos"};
+
+      printf("%d %c %s", s1.num, s1.letter, s1.string);
+
+      return 0;
+}
+
+// long ver (w/ strcpy)
+struct structure
+{
+      int num;
+      char letter;
+      char string[30];
+};
+
+int main()
+{
+      struct structure s1;
+
+      s1.myNum = 13;
+      s1.myLetter = 'B';
+
+      // assign a value to the string using the strcpy function
+      strcpy(s1.string, "Some text");
+
+      printf("My string: %s", s1.string);
+
+      return 0;
+}

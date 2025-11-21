@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<album>
+
+    
+    <title>Gershwin: Rhapsody in Blue / An American in Paris</title>
+    <composer>George Gershwin</composer>
+    <conductor>Leonard Bernstein</conductor>
+    <released date="11-25-1990"/>
+    <tracks>
+
+        <track number="1" duration="16:29" title="Rhapsody in Blue"/>
+        <track number="2" duration="18:30" title="An American in Paris"/>
+ 
+    </tracks>
+
+
+</album>

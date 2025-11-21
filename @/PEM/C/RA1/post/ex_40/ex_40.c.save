@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main(){
+
+    char tecla;
+
+    printf("Las Palmas - Levante ");
+    scanf("%c", &tecla);
+
+    if (tecla == '1'){
+        printf("Guanyen Las Palmas!");
+    }
+    else if (tecla == '2'){
+        printf("Guanya el Levante!");
+    }
+    else if (tecla == 'X' || tecla == 'x'){
+        printf("Hi ha un empat!");
+    }
+    else{
+        printf("El partit s'ha cancelat!");
+    }
+
+    getch();
+}

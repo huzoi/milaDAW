@@ -1,0 +1,51 @@
+{
+  "inventari": [
+  {
+    "productes":{
+      "alimentacio":{
+        "producte1":{
+          "id": "1",
+          "nom": "Baguette",
+          "preu": "0.38",
+          "qty": "49",
+        },
+        "producte2":{
+          "id": "2",
+          "nom": "Cereals",
+          "preu": "1.98",
+          "qty": "27",
+        },
+        "producte3":{
+          "id": "3",
+          "nom": "Pomes 1kg",
+          "preu": "2.38",
+          "qty": "9",
+        }
+      },
+        "electrodomestics":{
+        "producte1":{
+          "id": "4",
+          "nom": "Nevera Bosch",
+          "preu": "499.98",
+          "qty": "4",
+        },
+        "producte2":{
+          "id": "5",
+          "nom": "Forn Bosch",
+          "preu": "299.98",
+          "qty": "6",
+        },
+        "producte3":{
+          "id": "6",
+          "nom": "Microondes Bosch",
+          "preu": "149.98",
+          "qty": "9",
+        }
+      }
+    }
+  }
+  ]
+}
+      
+    
+   

@@ -1,0 +1,29 @@
+269
+
+		cotxe.matricula = “BBB9999”	elMeuCotxe.matricula = “BBB9999”
+		elMeuCotxe [matricula]= “BBB9997”	elMeuCotxe .matricula= “BBB9997”
+		taulaCotxes.marca=”RENAULT” 	taulaCotxes[2].marca=”RENAULT”
+		taulaCotxes[marca][anyCompra]=2020 	taulaCotxes[0].anyCompra=2020
+		taulaCotxes[3]=elMeuCotxe.marca 	taulaCotxes[3]=elMeuCotxe
+						taulaCotxes[3].marca=elMeuCotxe.marca
+		taulaCotxes= elMeuCotxe 		taulaCotxes[55]= elMeuCotxe
+
+
+	270
+
+     		b) e)
+
+
+	271
+
+		a) a)
+
+
+	272
+
+		a)
+
+
+	273
+
+		e) g) d)

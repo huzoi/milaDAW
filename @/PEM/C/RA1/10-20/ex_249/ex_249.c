@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX 100
+
+void main(){
+
+    char frase1[MAX], frase2[MAX], sortida;
+
+    printf("Introdueix una frase: ");
+    scanf("%50[^\n]", frase1);
+    fflush(stdin);
+
+    printf("Introdueix una segona frase: ");
+    scanf("%50[^\n]", frase2);
+
+    strcat(frase1, " ");
+    strcat(frase1, frase2);
+
+    printf("2 Frases Juntes: %s\n", frase1);
+    getch();
+}

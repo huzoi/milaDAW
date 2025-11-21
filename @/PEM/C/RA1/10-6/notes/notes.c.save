@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main(){
+
+int nota, aprovats, total;
+float percentatge;
+
+aprovats = 0;
+total = 0;
+
+while (!(total == 3)){
+    printf("Introdueix una nota: ");
+    if (scanf("%d", &nota) != 1 && nota < 0){
+        printf("\nValor Invalid\n");
+        return 0;
+        }else if (nota > 4 && nota < 11){
+            aprovats++;
+            total++;
+            }else{
+                total++;
+}
+}
+percentatge = aprovats / total
+printf("\nDe 3 examens, n'has aprovat %d\n", aprovats);
+getch();
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orders>
+
+
+    <order1>
+
+        <atributes>
+
+            <id>1</id>
+            <status>solved</status>
+
+        </atributes>
+        <elements>
+
+            <customer>
+
+                <name>ARNAU GARCIA CARMONA</name>
+                <emiail>v@voqe.me</emiail>
+
+            </customer>
+            <items>
+
+                <item1>
+
+                    <title>Abdominales en 30 dias ISBN38128319</title>
+                    <price>9.99$</price>
+                    <qty>1</qty>
+
+                </item1>
+
+
+            </items>
+        </elements>
+
+
+    </order1>
+    <order2>
+
+        <atributes>
+
+            <id>2</id>
+            <status>solved</status>
+
+        </atributes>
+        <elements>
+
+            <customer>
+
+                <name>ARNAU GARCIA CARMONA</name>
+                <emiail>v@voqe.me</emiail>
+
+            </customer>
+            <items>
+
+                <item1>
+
+                    <title>Genuine Intel(R)0000</title>
+                    <price>749.99$</price>
+                    <qty>1</qty>
+
+                </item1>
+
+
+            </items>
+        </elements>
+
+
+    </order2>
+    <order3>
+
+        <atributes>
+
+            <id>3</id>
+            <status>solved</status>
+
+        </atributes>
+        <elements>
+
+            <customer>
+
+                <name>ARNAU GARCIA CARMONA</name>
+                <emiail>v@voqe.me</emiail>
+
+            </customer>
+            <items>
+
+                <item1>
+
+                    <title>Zero Trace Phone</title>
+                    <price>1495.05$</price>
+                    <qty>1</qty>
+
+                </item1>
+
+
+            </items>
+        </elements>
+
+
+    </order3>
+    <total>
+
+        <totalItems>3</totalItems>
+        <totalPrice>2255.03$</totalPrice>
+
+    </total>
+
+
+</orders>

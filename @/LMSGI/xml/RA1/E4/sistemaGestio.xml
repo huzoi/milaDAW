@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<inventari>
+
+
+    <productes>
+
+        <alimentacio>
+
+            <producte1>
+                <producte id="1"></producte>
+                <nom>Baguette</nom>
+                <preu>0.38$</preu>
+                <qty>49</qty>
+            </producte1>
+            <producte2>
+                <producte id="2"></producte>
+                <nom>Cereals</nom>
+                <preu>1.98$</preu>
+                <qty>27</qty>
+            </producte2>
+            <producte3>
+                <producte id="3"></producte>
+                <nom>Pomes (1kg)</nom>
+                <preu>2.38$</preu>
+                <qty>9</qty>
+            </producte3>
+
+        </alimentacio>
+        <electrodomestics>
+
+            <producte1>
+                <producte id="4"></producte>
+                <nom>Nevera Bosch</nom>
+                <preu>499.98$</preu>
+                <qty>4</qty>
+            </producte1>
+            <producte2>
+                <producte id="5"></producte>
+                <nom>Forn Bosch</nom>
+                <preu>299.98$</preu>
+                <qty>6</qty>
+            </producte2>
+            <producte3>
+                <producte id="6"></producte>
+                <nom>Microondes Bosch</nom>
+                <preu>149.98$</preu>
+                <qty>9</qty>
+            </producte3>
+
+        </electrodomestics>
+
+    </productes>
+
+
+</inventari>

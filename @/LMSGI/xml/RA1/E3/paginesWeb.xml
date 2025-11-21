@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<paginesWeb>
+
+    
+    <web1>
+
+        <titol>Wikipedia</titol>
+        <desc>La enciclopedia lliure.</desc>
+        <url>http://www.wikipedia.org/</url>
+
+    </web1>
+    <web2>
+
+        <titol>W3C</titol>
+        <desc>Consorci de la 'World Wide Web'.</desc>
+        <url>http://www.w3.org/</url>
+
+    </web2>
+    <web3>
+
+        <titol>Institut Milà i Fontanals</titol>
+        <desc>Web de l'Institut Milà i Fontanals.</desc>
+        <url>http://www.milafontanals.com/</url>
+
+    </web3>
+
+
+</paginesWeb>

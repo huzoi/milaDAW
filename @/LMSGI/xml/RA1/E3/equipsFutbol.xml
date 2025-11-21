@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<equipsFutbol>
+
+    
+    <equip1>
+
+        <titol>Futbol Club Barcelona</titol>
+        <ciutat>Barcelona</ciutat>
+        <entrenador>Hans-Dieter Flick</entrenador>
+        <jugadors>
+
+            <jugador1>
+
+                <nom>Lamine</nom>
+                <cognom>Yamal</cognom>
+                <alCamp posicio="Davanter"></alCamp>
+
+            </jugador1>
+            <jugador2>
+
+                <nom>Robert</nom>
+                <cognom>Lewandowski</cognom>
+                <alCamp posicio="Davanter"></alCamp>
+
+            </jugador2>
+
+        </jugadors>
+        
+    </equip1>
+    <equip2>
+
+        <titol>Club Atlètic de Madrid</titol>
+        <ciutat>Madrid</ciutat>
+        <entrenador>Diego Pablo "Cholo" Simeone</entrenador>
+        <jugadors>
+
+            <jugador1>
+
+                <nom>Antoine</nom>
+                <cognom>Griezmann</cognom>
+                <alCamp posicio="Davanter"></alCamp>
+
+            </jugador1>
+            <jugador2>
+
+                <nom>Julián</nom>
+                <cognom>Álvarez</cognom>
+                <alCamp posicio="Davanter"></alCamp>
+
+            </jugador2>
+
+        </jugadors>
+        
+    </equip2>
+
+    
+</equipsFutbol>

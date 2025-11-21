@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<botigaEsports>
+
+    <articles>
+
+        <producte1>
+
+            <nom>Nike Sport Socks x6</nom>
+            <fabricant>Nike</fabricant>
+            <color>blanc</color>
+            <talla>39</talla>
+            <quantitat>99</quantitat>
+            <preu>16.99€</preu>
+            <id>001</id>
+
+        </producte1>
+        <producte2>
+
+            <nom>YEEZY 9x Footwear</nom>
+            <fabricant>Adidas</fabricant>
+            <color>negre</color>
+            <talla>44</talla>
+            <quantitat>2</quantitat>
+            <preu>1699.99€</preu>
+            <id>002</id>
+
+        </producte2>
+        <producte3>
+
+            <nom>Adidas Soccer Essential Footwear</nom>
+            <fabricant>Adidas</fabricant>
+            <color>crema</color>
+            <talla>42</talla>
+            <quantitat>43</quantitat>
+            <preu>44.99€</preu>
+            <id>003</id>
+
+        </producte3>
+
+    </articles>
+
+</botigaEsports>

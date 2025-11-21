@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAXX 5
+#define MAXY 5
+
+int m[MAXX][MAXY];
+
+void main()
+{
+    int op;
+    printf("Elegeix una funció (0/1): ");
+    scanf("%d", &op);
+
+    if (op == 0)
+    {
+        complirMatriu();
+    }
+        else if (op == 1)
+        {
+            mostrarMatriu();
+        }
+            else
+            {
+                printf("\nValor Ilegal.");
+                scanf("%d", &op);
+            }
+
+
+}
+
+void complirMatriu()
+{
+    int x, y;
+    
+    
+    for (y = 0; x < MAXY; y++)
+    {
+        for (x = 0; x < MAXX; x++)
+        {
+            m[x][y] = rand()%2;
+        }
+    }
+}
+
+void mostrarMatriu()
+{
+    printf("La matriu es: %d", m[MAXX][MAXY]);
+}

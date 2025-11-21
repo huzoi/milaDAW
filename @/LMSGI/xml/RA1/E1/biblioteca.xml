@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<biblioteca>
+
+    <llibres>
+
+        <llibre1>
+
+            <nom>The Prince: Niccolo Machiavelli</nom>
+            <autor>Niccolò Machiavelli</autor>
+            <any>1532</any>
+            <editorial>Penguin Classics</editorial>
+            <isbn>0140449159</isbn>
+            <desc>Nicolau Maquiavel, secretari de la República de Florència, va escriure aquesta obra amb la intenció de compartir el seu pensament pol·lític que influirá al món occidental.</desc>
+
+        </llibre1>
+        <llibre2>
+
+            <nom>Forrest Gump</nom>
+            <autor>Winston Groom</autor>
+            <any>1986</any>
+            <editorial>Vintage</editorial>
+            <isbn>0307947394</isbn>
+            <desc>Es una narrativa en primera persona de la vida de Forrest Gump. No te res a veure amb la pel·lícula de 1994.</desc>
+
+        </llibre2>
+
+    </llibres>
+
+</biblioteca>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cd>
+
+
+    <titol>Estopa</titol>
+    <autor>
+
+        <nom>Estopa</nom>
+        <naixementLloc>Espanya, Barcelona, Cornella de Llobregat</naixementLloc>
+        <naixementData>1978</naixementData>
+
+    </autor>
+    <creacioData>1999</creacioData>
+    <genereMusical>Rock</genereMusical>
+    <cansons>
+
+        <canso1>
+
+            <cansoTitol>Tu calorro</cansoTitol>
+            <cansoDuracio>3:12</cansoDuracio>
+
+        </canso1>
+        <canso2>
+
+            <cansoTitol>La raja de tu falda</cansoTitol>
+            <cansoDuracio>3:25</cansoDuracio>
+
+        </canso2>
+        <canso3>
+
+            <cansoTitol>Me falta el aliento</cansoTitol>
+            <cansoDuracio>3:40</cansoDuracio>
+
+        </canso3>
+
+    </cansons>
+
+
+</cd>

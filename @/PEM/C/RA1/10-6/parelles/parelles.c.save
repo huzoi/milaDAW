@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+void main(){
+
+    int num1, num2, dif;
+
+    printf("Introdueix un nombre: ");
+        if (scanf("%d", &num1) != 1 && num1){
+            printf("\nValor Invalid.\n");
+            return 0;
+            } printf("\nAra, introdueix un altre nombre: ");
+                if (scanf("%d", &num2) != 1 && num2){
+                    printf("\nValor Invalid.\n");
+                    return 1;
+                    }
+            /* if (num1 > num2){
+                dif = (num1 - num2);
+                printf("La diferencia entre aquests nombres es de %d", dif);
+                } else if (num1 < num2){
+                    dif = (num2 - num1);
+                    printf("La diferencia entre aquests nombres es de %d", dif);
+                    } else{
+                        dif = 0;
+                        printf("La diferencia entre aquests nombres es de %d", dif);
+                        } */
+
+            while (!(num1 == 0 || num2 == 0)){
+                if (num1 > num2){
+                    dif = (num1 - num2);
+                    printf("La diferencia entre aquests nombres es de %d", dif);
+                    break;
+                    } else if (num1 < num2){
+                        dif = (num2 - num1);
+                        printf("La diferencia entre aquests nombres es de %d", dif);
+                        break;
+                        } else{
+                            dif = 0;
+                            printf("La diferencia entre aquests nombres es de %d", dif);
+                            break;
+                            }
+                                
+                                            }
+                                        }
+    getch();
+
+}

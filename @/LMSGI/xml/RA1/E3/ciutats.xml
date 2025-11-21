@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cpn>
+
+
+        <paissos>
+
+            <pais1>
+
+                <title>India</title>
+                <continent continent="Àsia"/>
+            </pais1>
+            <pais2>
+
+                <title>Portugal</title>
+                <continent continent="Europa"/>
+            </pais2>
+            <pais3>
+
+                <title>Egipte</title>
+                <continent continent="Àfrica"/>
+            </pais3>
+
+        </paissos>
+        <ciutats>
+
+            <ciutat1>
+
+                <title>Nova Delhi</title>
+
+            </ciutat1>
+            <ciutat2>
+
+                <title>Lisboa</title>
+
+            </ciutat2>
+            <ciutat3>
+
+                <title>El Caire</title>
+
+            </ciutat3>
+
+        </ciutats>
+
+
+</cpn>

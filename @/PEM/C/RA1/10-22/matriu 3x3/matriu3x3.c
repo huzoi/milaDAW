@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 3
+
+
+void generar_matriu(int matriu[N][N])
+{
+    srand(time(NULL));
+
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            matriu[i][j] = rand() % 10;
+        }
+    }
+
+    printf("Matriu generada:\n");
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            printf("%d ", matriu[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+
+int hi_ha_set(int matriu[N][N])
+{
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            if (matriu[i][j] == 7)
+            {
+                return 1;
+            }
+        }
+    }
+    return 0;
+}
+
+
+int main()
+{
+    int matriu[N][N];
+
+    generar_matriu(matriu);
+
+    if (hi_ha_set(matriu))
+    {
+        printf("Hi ha un 7 a la matriu!\n");
+    }   else
+        {
+            printf("No hi ha cap 7 a la matriu.\n");
+        }
+
+    getch();
+}

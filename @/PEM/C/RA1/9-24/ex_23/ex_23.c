@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int main()
+{
+
+   char lletra;
+   char majus;
+   char minus;
+
+   // Es demana la lletra.
+   printf("Introdueix una lletra: ");
+
+   // Revisa que s'hagi introduit una lletra, i en cas de que així sigui, es tenca el programa.
+  if (scanf("%c", &lletra) != 1)
+    {
+    printf("No s'ha introduït una lletra. El programa es tencará en 3 segons.\n");
+
+    return 3;
+    }
+
+  if (lletra != 'a')
+    {
+    printf("Lletra anterior: %c\n", lletra - 1);
+    }
+
+  if (lletra != 'z')
+    {
+    printf("Lletra posterior: %c\n", lletra + 1);
+    }
+
+    printf("Lletra majuscula: %c\n", lletra - 32);
+
+    // No he aconseguit descobrir com filtrar si la lletra es majúscula o minúscula, doncs, nomès puc fer-ho amb la minúscula.
+
+    return 0;
+
+}

@@ -1,0 +1,13 @@
+
+
+Declarar la Variable del nombre.
+
+Demanar el nombre a l'usuari.
+
+Llegir el nombre insertat.
+
+Declarar les variables del nombre*2 (Multiplicat X2) i del nombre*nombre (El nombre al quadrat) i operar els nombres.
+
+Ensenyar a l'usuari els nombres ja factoritzats, primer el nombre*2, i a sota, el nombre*nombre.
+
+Esperar a que l'usuari presioni una tecla per tancar el programa.

@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+
+int main(){
+
+int dia, mes;
+
+    printf("Introdueix un dia (1-31): ");
+        if (scanf("%d", &dia) < 1 || dia > 31){
+            printf("\nValor Invalid.\n");
+            return 0;
+            }
+
+    printf("\nAra, introdueix un mes (1-12): ");
+        if (scanf("%d", &mes) < 1 || mes > 12){
+            printf("\nValor Invalid.\n");
+            return 1;
+            }
+
+    if (mes >= 3 && dia >= 21 || mes <= 6 && dia <= 20){
+        printf("\nLa data %d/0%d correspon a la Primavera.\n", dia, mes);
+        }else if (mes >= 6 && dia >= 21 || mes <= 9 && dia <= 20){
+            printf("\nLa data %d/0%d correspon a l'Estiu.\n", dia, mes);
+            }else if (mes >= 9 && dia >= 21 || mes <= 12 && dia <= 20){
+                printf("\nLa data %d/%d correspon a la Tardor.\n", dia, mes);
+                }else if (mes >= 12 && dia >= 21 || mes <= 3 && dia <= 20){
+                    printf("\nLa data %d/%d correspon a l'Hivern.\n", dia, mes);
+                    }else{
+                        printf("\nValor Invalid.\n");
+                        return 2;
+                        }
+getch();
+
+}

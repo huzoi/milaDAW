@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<agenciaHotels>
+
+    <hotels>
+
+        <hotel1>
+
+            <nom>Sport Hotel Hermitage Spa 5*</nom>
+            <pais>Principat d'Andorra</pais>
+            <ciutat>Soldeu</ciutat>
+            <estrelles>5</estrelles>
+            <desc>Un hotel de luxe de 5 estrelles amb spa, gastronomia, vistes espectaculars i 120 habitacions.</desc>
+            <tlf>+376 870 670</tlf>
+            <adresa>Autovia CG-2</adresa>
+
+        </hotel1>
+        <hotel2>
+
+            <nom>Jumeirah Burj Al Arab Dubai</nom>
+            <pais>Emirats Àrabs Units</pais>
+            <ciutat>Dubai</ciutat>
+            <estrelles>5</estrelles>
+            <desc>Un hotel de luxe de 5 estrelles, cosa que popularment en té 7. Proporciona vistes extraodinàries, i es considerat un dels millors espais del món, pot ser visitat.</desc>
+            <tlf>+971 4 301 7777</tlf>
+            <adresa>Umm Suqeim Third - Umm Suqeim 3</adresa>
+
+        </hotel2>
+
+    </hotels>
+
+</agenciaHotels>

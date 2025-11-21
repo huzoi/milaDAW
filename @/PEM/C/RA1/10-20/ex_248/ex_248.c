@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX 50
+
+void main(){
+
+    char sortida[200];
+    char frase[MAX];
+    int i = 0;
+
+    printf("Introdueix una frase: ");
+    /* scanf("%50[^\n]", frase);
+
+    printf("\nLongitud: %lu\n", strlen (frase));
+    printf("\n--> %s <--", frase); */
+
+    scanf("%50[^\n]", frase);
+
+    printf("\nLongitud: %lu Caracters.\n", strlen (frase));
+
+    strcpy(sortida, "\nFrase: -->[");
+    strcat(sortida, frase);
+    strcat(sortida, "]<--");
+    printf("%s", sortida);
+
+    while(!(frase[i] == '\0')){
+        switch (frase[i]){
+            case 'A':
+                frase[i] = 'E';
+                break;
+                case 'E':
+                    frase[i] = 'I';
+                    break;
+                    case 'I':
+                        frase[i] = 'O';
+                        break;
+                        case 'O':
+                            frase[i] = 'U';
+                            break;
+                            case 'U':
+                                frase[i] = 'A';
+                                break;
+                case 'a':
+                    frase[i] = 'e';
+                    break;
+                    case 'e':
+                        frase[i] = 'i';
+                        break;
+                        case 'i':
+                            frase[i] = 'o';
+                            break;
+                            case 'o':
+                                frase[i] = 'u';
+                                break;
+                                case 'u':
+                                    frase[i] = 'a';
+                                    break;
+        }
+        i++;
+    }
+    printf("\nFrase amb Vocals Canviades: --> %s <--", frase);
+
+
+
+
+
+
+
+
+    getch();
+}
+

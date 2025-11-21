@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+
+int main(){
+
+	int temp;
+
+	printf("Introdueix un nombre: ");
+	if (scanf("%d", &temp) != 1){
+        printf("\nValor Invalid\n");
+        return 1;
+
+	} if (temp > 0) {
+		printf("\nLa Temperatura de %d equival a calor tropical \n.", temp);
+	}   if (temp == 0) {
+          printf("\nLa Temperatura de %d equival a ni fred ni calor \n.", temp);
+	}      if (temp < 0) {
+             printf("\nLa Temperatura de %d es sota zero \n.", temp);
+	}
+
+	getch();
+}

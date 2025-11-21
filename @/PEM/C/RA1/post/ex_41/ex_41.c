@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+int main(){
+
+	float angle;
+
+	printf("Introdueix un angle (0-360º): ");
+        if (scanf("%f", &angle) != 1 || angle > 360){
+            printf("\nValor Invalid\n");
+            return 0;
+}
+    if (angle == '0' || angle == '90' || angle > '0' && angle < '91'){
+        printf("\nL'angle %fº es situa en el 1r quadrant\n", angle);
+    }
+        if (angle == '90' || angle == '180'|| angle > '90' && angle < '181'){
+            printf("\nL'angle %fº es situa en el 2n quadrant\n", angle);
+    }
+            if (angle == '180' || angle == '270' || angle > '180' && angle < '271'){
+                printf("\nL'angle %fº es situa en el 3r quadrant\n", angle);
+    }
+                if (angle == '270' || angle == '360' || angle > '270' && angle < '361'){
+                    printf("\nL'angle %fº es situa en el 4r quadrant\n", angle);
+    }
+
+    getch();
+}

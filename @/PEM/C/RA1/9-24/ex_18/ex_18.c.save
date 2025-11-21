@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int main()
+{
+
+double nombre;
+int nombreInt
+double nombreDouble
+
+printf("Escriu un nombre amb decimals: ");
+scanf("%d", &nombre);
+
+nombreInt = (int) no
+nombreDouble = nombreInt - nombre;
+
+printf("a) %d\n", nombreInt);
+printf("b) %.3f\n", nombreDouble);
+
+return 0;
+}

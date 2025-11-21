@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+
+int main() {
+
+	int num1, num2, num3;
+
+	printf("Introdueix un nombre: ");
+	if (scanf("%d", &num1) != 1){
+        printf("Valor Invalid");
+        return 1;
+	}
+
+	printf("Introdueix un segon nombre: ");
+	if (scanf("%d", &num1) != 1){
+        printf("Valor Invalid");
+        return 1;
+	}
+
+	printf("Introdueix un tercer nombre: ");
+	if (scanf("%d", &num1) != 1){
+        printf("Valor Invalid");
+        return 1;
+	}
+
+	if (num1 > num2 && num1 > num3) {
+		printf("El nombre %d (1r) es el mes gran\n.", num1);
+	}
+        else if (num2 > num1 && num2 > num3) {
+            printf("El nombre %d (2n) es el mes gran\n.", num2);
+	}
+	       else {
+                printf("El nombre %d (3r) es el mes gran\n.", num3);
+	}
+	getch();
+}

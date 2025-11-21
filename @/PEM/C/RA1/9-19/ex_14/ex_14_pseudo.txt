@@ -1,0 +1,13 @@
+
+
+Declarar el 'float' (ha acabat sent 'double'), amplada, longitud, i área.
+
+Demanar a l'usuari l'amplada de l'habitació en metres i guardar-la.
+
+Demanar a l'usuari la longitud de l'habitació en metres i guardar-la.
+
+Operar les variables per trobar l'área (encara no sabia la fórmula)(area = amplada * longitud).
+
+Ensenyar a l'usuari l'operació resolta.
+
+Esperar a que l'usuari presioni una tecla per tancar el programa.
