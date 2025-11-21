@@ -3,32 +3,32 @@
 
 // Struct for ingredients
 typedef struct {
-    char name[50];
-    float price;
-    int available;
+    char nom[50];
+    float preu;
+    int disponible;
 } Ingredient;
 
 // Struct for pizza order
 typedef struct {
-    char pizza_name[100];
+    char pizza_nom[100];
     Ingredient ingredients[10];
-    int ingredient_count;
-    float total_price;
+    int ingredient_qt;
+    float total_preu;
 } PizzaOrder;
 
 // Function to create a pizza order
-PizzaOrder create_order(char *name, Ingredient available_ingredients[], int total_ingredients) {
+PizzaOrder create_order(char *nom, Ingredient disponible_ingredients[], int total_ingredients) {
     PizzaOrder order;
-    strcpy(order.pizza_name, name);
-    order.ingredient_count = 0;
-    order.total_price = 0.0;
+    strcpy(order.pizza_nom, nom);
+    order.ingredient_qt = 0;
+    order.total_preu = 0.0;
     
-    printf("\n=== Creating Order: %s ===\n", name);
-    printf("Available ingredients:\n");
+    printf("\n=== Creating Order: %s ===\n", nom);
+    printf("disponible ingredients:\n");
     
-    // Display available ingredients
+    // Display disponible ingredients
     for (int i = 0; i < total_ingredients; i++) {
-        printf("%d. %s - $%.2f\n", i + 1, available_ingredients[i].name, available_ingredients[i].price);
+        printf("%d. %s - $%.2f\n", i + 1, disponible_ingredients[i].nom, disponible_ingredients[i].preu);
     }
     
     printf("\nEnter ingredient numbers to add (0 to finish):\n");
@@ -46,13 +46,13 @@ PizzaOrder create_order(char *name, Ingredient available_ingredients[], int tota
         
         // Add ingredient to order
         int index = choice - 1;
-        if (available_ingredients[index].available) {
-            order.ingredients[order.ingredient_count] = available_ingredients[index];
-            order.total_price += available_ingredients[index].price;
-            order.ingredient_count++;
-            printf("Added %s\n", available_ingredients[index].name);
+        if (disponible_ingredients[index].disponible) {
+            order.ingredients[order.ingredient_qt] = disponible_ingredients[index];
+            order.total_preu += disponible_ingredients[index].preu;
+            order.ingredient_qt++;
+            printf("Added %s\n", disponible_ingredients[index].nom);
         } else {
-            printf("%s is not available!\n", available_ingredients[index].name);
+            printf("%s is not disponible!\n", disponible_ingredients[index].nom);
         }
     }
     
@@ -62,20 +62,20 @@ PizzaOrder create_order(char *name, Ingredient available_ingredients[], int tota
 // Function to display order summary
 void display_order(PizzaOrder order) {
     printf("\n=== Order Summary ===\n");
-    printf("Pizza: %s\n", order.pizza_name);
+    printf("Pizza: %s\n", order.pizza_nom);
     printf("Ingredients:\n");
     
-    for (int i = 0; i < order.ingredient_count; i++) {
-        printf("  - %s ($%.2f)\n", order.ingredients[i].name, order.ingredients[i].price);
+    for (int i = 0; i < order.ingredient_qt; i++) {
+        printf("  - %s ($%.2f)\n", order.ingredients[i].nom, order.ingredients[i].preu);
     }
     
-    printf("Total Price: $%.2f\n", order.total_price);
+    printf("Total preu: $%.2f\n", order.total_preu);
     printf("====================\n\n");
 }
 
 // Main function
 int main() {
-    // Initialize available ingredients
+    // Initialize disponible ingredients
     Ingredient ingredients[] = {
         {"Cheese", 1.50, 1},
         {"Pepperoni", 2.00, 1},

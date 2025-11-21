@@ -1,1 +1,1 @@
-i use arch btw
+From Arch Linux / NixOS VM
