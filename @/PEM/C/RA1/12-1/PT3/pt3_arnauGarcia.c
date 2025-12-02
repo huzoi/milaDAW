@@ -189,7 +189,7 @@ void dies_aniversari(Talumne alumnes[], int qt_alumnes){
     
     printf("\n");
     printf("Dies fins al proper aniversari\n");
-    printf("Nom                                      Dies\n");
+    printf("Nom ====== Dies\n");
     
     if(qt_alumnes == 0){
         printf("No hi ha alumnes registrats.\n");
