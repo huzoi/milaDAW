@@ -1,1 +1,1 @@
-From Arch Linux / NixOS VM
+From Arch Linux VM
