@@ -2,4 +2,4 @@
 - inquires@huzoi.me
 - 47142368G
 
-Repositori utilitzat (principalment) per a l'assignatura de Programació Estructurada i Modular a l'IES Milà i Fontanals d'Igualada.
+Repositori utilitzat (principalment) per a l'assignatura de Programació Estructurada i Modular.
