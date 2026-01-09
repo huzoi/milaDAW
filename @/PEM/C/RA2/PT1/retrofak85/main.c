@@ -1,4 +1,4 @@
-// m'he ajudat d'IA per automatitzar els printfs i per facilitar-me la vida en quant a la funcionalitat dels arxius.
+// m'he ajudat d'IA per automatitzar els printfs.
 
 #include <stdio.h>
 #include <string.h>
