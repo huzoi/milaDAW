@@ -9,9 +9,9 @@ import java.util.Scanner;
             System.out.println("Introdueix el numero de caracters des del final: ");
             int numCaracters = sc.nextInt();
 
-            if (numCaracters > 0 && numCaracters <= text.length()) {
-                String subs = s.subs(s.length() - numCaracters);
-                System.out.println("Subcadena (Ultims " + numCaracters + "caracters): " + subs);
+            if (numCaracters > 0 && numCaracters <= s.length()) {
+                String subs = s.substring(s.length() - numCaracters);
+                System.out.println("Subcadena (Ultims " + numCaracters + " caracters): " + subs);
             } else {
                 System.out.println("Numero de caracters no valid");
             }
