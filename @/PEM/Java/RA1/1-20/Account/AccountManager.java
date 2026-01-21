@@ -1,3 +1,5 @@
+//he nombrat els objectes en angles, en aquest arxiu i els altres, i en general els prints tambe ja que prefereixo acostumbrar-me (tampoc puc utilitzar accents sense canviar l'entrada al teclat en espanyol)
+
 public class AccountManager {
     public String name;
     private String phone;
@@ -20,8 +22,8 @@ public class AccountManager {
     }
     
     public void displayInfo() {
-        System.out.println("  Gestor: " + name);
-        System.out.println("  Telèfon: " + phone);
-        System.out.println("  Import màxim autoritzat: " + maxAmount + " euros");
+        System.out.println("  Manager: " + name);
+        System.out.println("  Phone Number: " + phone);
+        System.out.println("  Maximum authorized amount:  " + maxAmount + "$");
     }
 }

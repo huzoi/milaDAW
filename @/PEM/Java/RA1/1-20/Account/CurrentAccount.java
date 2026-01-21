@@ -41,7 +41,7 @@ public class CurrentAccount {
         if (id.length() == 9) {
             this.id = id;
         } else {
-            System.out.println("Error: El DNI ha de tenir 9 caràcters");
+            System.out.println("Error: ID has to be 9 characters long");
         }
     }
     
@@ -53,7 +53,7 @@ public class CurrentAccount {
         if (name.length() > 3) {
             this.name = name;
         } else {
-            System.out.println("Error: El nom ha de tenir més de 3 caràcters");
+            System.out.println("Error: Name has to be more than 3 characters long");
         }
     }
     
@@ -86,7 +86,7 @@ public class CurrentAccount {
             balance -= amount;
             return true;
         } else {
-            System.out.println("Saldo insuficient per retirar " + amount + " euros, ves a fer hores");
+            System.out.println("Not enough funds to withdraw " + amount + "$");
             return false;
         }
     }
@@ -96,17 +96,17 @@ public class CurrentAccount {
     }
     
     public void statement() {
-        System.out.println("\n=== EXTRACTE DEL COMPTE ===");
-        System.out.println("Banc: " + bankName);
-        System.out.println("DNI: " + id);
-        System.out.println("Titular: " + name);
-        System.out.println("Saldo: " + balance + " euros");
+        System.out.println("\n=== ACCOUNT STATEMENT ===");
+        System.out.println("Bank: " + bankName);
+        System.out.println("ID: " + id);
+        System.out.println("Legal Name: " + name);
+        System.out.println("Funds: " + balance + "$");
         
         if (manager != null) {
-            System.out.println("\nInformació del Gestor:");
+            System.out.println("\nManager Information: \n");
             manager.displayInfo();
         } else {
-            System.out.println("Sense gestor assignat");
+            System.out.println("No manager assigned to this account");
         }
     }
 }
